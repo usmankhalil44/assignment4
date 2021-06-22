@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        
+        <h:form>
+            <h:panelGrid columns="2" cellpadding="5">  
+                <p:outputLabel for="username" value="Username"/>
+                <p:inputText id="username" value="#{myconn.username}" placeholder="username" required="true"/>
+                
+                <p:outputLabel for="password" value="Password"/>
+                <p:inputText id="password" value="#{myconn.password}" placeholder="password" required="true"/>
+                
+                <p:outputLabel for="City" value="City"/>
+                <p:inputText id="City" value="#{myconn.city}" placeholder="City" required="true"/>
+                
+                <p:outputLabel for="dob" value="Date Of Birth"/>
+                <p:inputText id="dob" value="#{myconn.dob}" placeholder="Date Of Birth" required="true"/>
+                
+                <p:commandButton id="submit" value="submit" action="#{myconn.Register()}"/>
+ 
+            </h:panelGrid>  
+        </h:form>
+    </h:body>
+</html>
+
